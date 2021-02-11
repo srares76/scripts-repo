@@ -14,7 +14,7 @@ wget https://raw.githubusercontent.com/srares76/scripts-repo/master/ccompile
 sudo chmod a+x * 
 
 
-# Move them on Desktop 
+# Move them in bin
 
 for each in $(ls ~/scripts)
 do
