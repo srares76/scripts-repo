@@ -30,6 +30,7 @@ done
 brew help &> /dev/null || ./install-brew.sh
 
 
+clear
 # Possibly install Sublime
 echo "Do you want Sublime-Text?"
 read ANS
@@ -48,14 +49,43 @@ then
 	brew install Discord
 fi
 
+echo "Do you want Google Chrome?"
+read ANS
+if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
+then
+	brew install google-chrome
+fi
+
 
 # Install essentials
 
-echo "installing essentials..."
+echo "Installing essentials..."
 sleep 2
 brew install whatsapp
 brew install alfred
 brew install spectacle
+brew install macs-fan-control
+open /Applications/zoom.us.app &> /dev/null && brew install zoom
+
+
+# Install other packages
+
+clear
+echo "Do you use the terminal?"
+read ANS
+if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
+then
+	echo "Installing other useful packages..."
+	brew install tree
+	brew install pstree
+	brew install pidof
+	brew install tldr
+	brew install htop
+	brew install speedtest-cli
+	brew install python@3.9
+	brew install perl
+	brew install brightness
+fi
 
 
 # Personalize zsh if not already personalised
@@ -70,7 +100,6 @@ fi
 # Clean up
 
 rm -r ~/scripts
-
 
 echo =========================================================
 echo
