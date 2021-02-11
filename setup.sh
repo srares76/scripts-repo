@@ -20,7 +20,6 @@ for each in $(ls ~/scripts)
 do
 	if [ ! -f /usr/local/bin/"$each" ]
 	then
-		echo Mut $each in bin
 		cp "$each" /usr/local/bin/
 	fi
 done
@@ -72,7 +71,7 @@ open /Applications/zoom.us.app &> /dev/null && brew install zoom
 # Install other packages
 
 clear
-echo "Do you use the terminal?"
+echo "Do you ever use the terminal?"
 read ANS
 if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
 then
