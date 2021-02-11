@@ -62,6 +62,7 @@ fi
 echo "Installing essentials..."
 sleep 2
 brew install whatsapp
+brew install surfshark
 brew install alfred
 brew install spectacle
 brew install macs-fan-control
