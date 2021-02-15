@@ -11,6 +11,7 @@ wget https://raw.githubusercontent.com/srares76/scripts-repo/master/install-brew
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/subl
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/getbattery
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/ccompile
+wget https://raw.githubusercontent.com/srares76/scripts-repo/master/brght
 sudo chmod a+x * 
 
 
@@ -65,6 +66,7 @@ brew install surfshark
 brew install alfred
 brew install spectacle
 brew install macs-fan-control
+brew install keyboard-maestro
 open /Applications/zoom.us.app &> /dev/null && brew install zoom
 
 
