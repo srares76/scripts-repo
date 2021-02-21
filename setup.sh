@@ -67,7 +67,6 @@ brew install surfshark
 brew install alfred
 brew install spectacle
 brew install macs-fan-control
-brew install keyboard-maestro
 open /Applications/zoom.us.app &> /dev/null && brew install zoom
 
 
