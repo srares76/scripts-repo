@@ -13,6 +13,7 @@ wget https://raw.githubusercontent.com/srares76/scripts-repo/master/+compile
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/ccompile
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/getbattery
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/brght
+wget https://raw.githubusercontent.com/srares76/scripts-repo/master/upgrade-utilities.sh
 sudo chmod a+x * 
 
 
