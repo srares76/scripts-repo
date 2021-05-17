@@ -8,7 +8,6 @@ cd ~/scripts
 pwd
 
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/install-brew.sh
-wget https://raw.githubusercontent.com/srares76/scripts-repo/master/subl
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/+compile
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/ccompile
 wget https://raw.githubusercontent.com/srares76/scripts-repo/master/getbattery
@@ -41,6 +40,12 @@ then
 	brew install sublime-text
 fi
 
+echo "Do you want Visual Studio Code?"
+read ANS
+if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
+then
+	brew install visual-studio-code
+fi
 
 # Possibly install Discord
 
