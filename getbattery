@@ -1,0 +1,6 @@
+#!/bin/zsh
+
+CYCLES=$(system_profiler SPPowerDataType | grep "Cycle Count" | cut -d ':' -f 2)
+PERCENTAGE=$(system_profiler SPPowerDataType | grep % | cut -d ':' -f 2)
+echo Battery cycles:$CYCLES
+echo Battery percentage:$PERCENTAGE%
