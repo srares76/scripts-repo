@@ -1,3 +1,11 @@
+# Install brew
+brew help &> /dev/null || ./install-brew.sh
+
+
+# Install wget
+brew install wget
+
+
 # Download all the scripts
 
 if [ ! -d ~/scripts ]
@@ -26,19 +34,18 @@ do
 	fi
 done
 
-
-# Install brew
-brew help &> /dev/null || ./install-brew.sh
-
-
 clear
+
 # Possibly install Sublime
+
 echo "Do you want Sublime-Text?"
 read ANS
 if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
 then
 	brew install sublime-text
 fi
+
+# Possibly install Visual Studio Code
 
 echo "Do you want Visual Studio Code?"
 read ANS
@@ -69,11 +76,10 @@ fi
 echo "Installing essentials..."
 sleep 2
 brew install whatsapp
-brew install surfshark
+brew install iterm2
 brew install alfred
 brew install spectacle
 brew install macs-fan-control
-open /Applications/zoom.us.app &> /dev/null && brew install zoom
 
 
 # Install other packages
@@ -93,15 +99,6 @@ then
 	brew install python@3.9
 	brew install perl
 	brew install brightness
-fi
-
-
-# Personalize zsh if not already personalised
-
-if [ ! -f ~/.zshrc ]
-then
-	wget https://raw.githubusercontent.com/srares76/scripts-repo/master/zsh.txt
-	cat zsh.txt >> ~/.zshrc
 fi
 
 
