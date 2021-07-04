@@ -82,6 +82,24 @@ then
 	brew install octave
 fi
 
+# Possibly install Teams
+echo "Do you want Microsoft Teams?"
+read ANS
+if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
+then
+	brew install microsoft-teams
+fi
+
+# Possibly install the Office Suite
+echo "Do you want the Office Suite?"
+read ANS
+if [ "$ANS" = "yes" ] || [ "$ANS" = "Yes" ] || [ "$ANS" = "y" ] || [ "$ANS" = "Y" ]
+then
+	brew install microsoft-word
+	brew install microsoft-powerpoint
+	brew install microsoft-excel
+fi
+
 # Install essentials
 echo "Installing essentials..."
 sleep 2
@@ -90,6 +108,7 @@ brew install iterm2
 brew install alfred
 brew install spectacle
 brew install macs-fan-control
+brew install vlc
 
 # Install other packages
 clear
