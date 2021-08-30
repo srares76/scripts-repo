@@ -4,8 +4,10 @@ TOTAL=$(brew list | wc -l)
 UTILITIES=0
 TO_JUMP=0
 
+APP="background-music"
+
 for each in $(brew list); do
-    if [ $each != "alfred" ]; then
+    if [ $each != $APP ]; then
         ((UTILITIES++))
     else
         break
